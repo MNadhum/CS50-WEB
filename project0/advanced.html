@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            a {
+                float: right;
+                margin-right: 1vh;
+            }
+            .search {
+                position: static;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                vertical-align: middle;
+                height: 97vh;
+            }
+            input {
+                vertical-align: middle;
+                float: right;
+                width: 60%;
+            }
+            .inside {
+                width: 150%;
+                justify-content: right;
+                align-items: right;
+                float:left
+            }
+        </style>
+    </head>
+    <body style="margin: 0;">
+        <header style="height: 3vh;">
+            <a href="index.html">Google Search</a>
+            <br><br>
+        </header>
+        <div class="search">
+            <form action="https://google.com/search">
+                <div class="inside">
+                    <p>all these words: <input type="text" name ="as_q"></p>
+                    <p>this exact word or phrase: <input type="text" name ="as_epq"></p>
+                    <p>any of these words: <input type="text" name ="as_oq"></p>
+                    <p>none of these words: <input type="text" name ="as_eq"></p>
+                    <input type="submit" value="Google Advanced Search" style="color: white; background-color:#4a8bf5; border-color: #3079ed; border-radius: 5px; padding:1%; width: 35%;">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
