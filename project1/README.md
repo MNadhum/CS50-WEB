@@ -1,7 +1,7 @@
 ## Project 1
 
 ##### Recreated Wikipedia functionality, allowing users to create/edit encyclopedia entries in Markdown langauge, and changed to HTML for browser viewing.
-###### Created using HTML5 and [Django](https://www.djangoproject.com/){:target="_blank"}
+Created using HTML5 and [Django](https://www.djangoproject.com){:target="_blank"}
 
 
 | Home Page: |
