@@ -4,6 +4,7 @@
 ###### Created using HTML5 and <a href="https://www.djangoproject.com" target="_blank">Django</a>
 
 
+### Website Image Examples:
 | Home Page: |
 | ------------- |
 | <img src="https://i.imgur.com/aI5r3Cm.png" alt="image of home page">  |
