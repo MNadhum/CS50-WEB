@@ -1,6 +1,8 @@
 ## Project 1
 
-Recreated Google Search page, Google Image Search page, and Google Advanced Search page with full searching functionality
+##### Recreated Wikipedia functionality, allowing users to create/edit encyclopedia entries in Markdown langauge, and changed to HTML for browser viewing.
+###### Created using HTML5 and [Django](https://www.djangoproject.com/)
+
 
 | Home Page: |
 | ------------- |
