@@ -5,6 +5,10 @@
 {% endblock %}
 
 {% block body %}
-    {{ information|safe }}
-
+        {{ information|safe }}
+        {% if not found %}
+            <p style="vertical-align: top;">Please <a href="{% url 'encyclopedia:create' %}"> Create New Page </a> For This Entry</p>
+        {% elif found %}
+            <p>Click <a href="{% url 'encyclopedia:edit' entry%}">here</a> to edit this page</p>
+        {% endif %}
 {% endblock %}
