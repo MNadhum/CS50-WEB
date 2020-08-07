@@ -1,16 +1,31 @@
 {% extends "encyclopedia/layout.html" %}
 
 {% block title %}
-    Encyclopedia
+    Create New Page
 {% endblock %}
 
 {% block body %}
-    <h1>All Pages</h1>
-
-    <ul>
-        {% for entry in entries %}
-            <li> <a href="{% url 'encyclopedia:page' entry %}">{{ entry }}</a> </li>
-        {% endfor %}
-    </ul>
+    {% if messages %}
+                {% for message in messages %}
+                <div class="main col-lg-10 col-md-9">
+                    <div class="alert alert-danger" role="alert">
+                        {{ message }}
+                    </div>
+                </div>
+                {% endfor %}
+    {% endif %}
+    <h1>Create New Encyclopedia Entry</h1>
+    <br>
+    <form id="create">
+        <div>
+            <h4 style="display: inline; vertical-align: middle;">Entry Title:</h4>
+            <input style="vertical-align: middle;" type="text" name="title" placeholder="Title">
+            <input style="vertical-align: middle;" type="submit" value="Create New Entry">
+        </div>
+        <br>
+        <div>
+            <textarea name="content" form="create" style="resize: none; height: auto;" placeholder="Entry Content" rows="30"></textarea>
+        </div>
+    </form>
 
 {% endblock %}
