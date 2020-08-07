@@ -11,7 +11,8 @@ urlpatterns = [
     url(r'^search/$', views.search, name="search"),
     path("create/", views.create, name="create"),
     path("edit/<str:entry>", views.edit, name="edit"),
-    path("edit/", views.redirect, name="edit_no_entry")
+    path("edit/", views.redirect, name="edit_no_entry"),
+    path("random_page/", views.random_page, name="random_page")
 
 ]
 
