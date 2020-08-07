@@ -1,0 +1,22 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit {{entry}}
+{% endblock %}
+
+{% block body %}
+    <form id="edit">
+        <div>
+            <h4 style="vertical-align: middle;">Editing {{entry}}</h4>
+            <a href= "{% url 'encyclopedia:edit' entry%}">
+                <input style="vertical-align: middle;" type="submit" value="Save Entry">
+            </a>
+        </div>
+
+        <br>
+        
+        <div>
+            <textarea name="content" form="edit" style="resize: none; height: auto;" rows="30">{{content}}</textarea>
+        </div>
+    </form>
+{% endblock %}
