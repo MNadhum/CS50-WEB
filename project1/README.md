@@ -2,7 +2,7 @@
 
 Recreated Google Search page, Google Image Search page, and Google Advanced Search page with full searching functionality
 
-| Home Page:  | Entry Example: 
+| Home Page:  | Entry Example: |
 | ------------- | ------------- |
 | <img src="https://i.imgur.com/aI5r3Cm.png" alt="image of home page">  | <img src="https://i.imgur.com/Myxlaut.png" alt="HTML entry">  |
 
