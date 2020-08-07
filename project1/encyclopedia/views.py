@@ -7,6 +7,7 @@ from django.urls import reverse
 from . import util
 
 import os
+import random
 
 
 def redirect(request):
@@ -96,3 +97,9 @@ def edit(request, entry):
             })
     return render(request, "encyclopedia/index.html", {})
 
+def random_page(request):
+    entries = util.list_entries()
+
+    page_index = random.randint(0, (len(entries) - 1))
+    title = entries[page_index]
+    return HttpResponseRedirect(('/wiki/' + str(title)))
