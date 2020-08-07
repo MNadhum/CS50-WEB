@@ -81,12 +81,14 @@ def edit(request, entry):
         except:
             pass
         rewrite = open(os.path.join("./entries" ,(str(entry) + ".md")), "w")
+        content = content.replace('\n','')
         rewrite.write(content)
         rewrite.close()
         return HttpResponseRedirect(('/wiki/' + str(entry)))
     else:
-        print('else')
-        content = util.get_entry(entry)
+        open_file = open(os.path.join("./entries" ,(str(entry) + ".md")), "r")
+        content = open_file.read()
+        open_file.close()
         if content != None:
             return render(request, "encyclopedia/edit.html", {
                 "entry": entry,
